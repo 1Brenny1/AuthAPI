@@ -1,0 +1,49 @@
+<style>
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    form {
+        width:50%;
+        margin-left: 25%;
+    }
+
+    .Alert {
+        margin-left: -25%;
+        width: 150%;
+        text-align: center;
+        background-color: #ff5555;
+        border-radius: 25px;
+    }
+    div {
+        width: 25%;
+        padding: 0;
+        display: inline-block;
+    }
+    div a {
+        width: 75px;
+        height: 75px;
+        float:right;
+    }
+    div a button {
+        width: 75px;
+        height: 75px;
+        float:right;
+        word-break: break-all;
+        background-color: #ff5555;
+    }
+    div a button:hover {
+        background-color: #AA0000;
+    }
+</style>
+<blockquote>
+    <form method="POST">
+        <h1>Create Auth Token</h1>
+        <input type="text" name="Label" placeholder="Label" required>
+        <input type="submit" value="Create">
+        <p class="Alert">{Alert}</p>
+    </form>
+</blockquote>
+<br>
+<h1>Active Auth Token(s):</h1>
+{AuthTokens}
